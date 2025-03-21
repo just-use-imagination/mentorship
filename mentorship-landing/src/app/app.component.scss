@@ -1,0 +1,20 @@
+:host {
+    display: block;
+    min-height: 100vh;
+}
+
+.container {
+    padding: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+main {
+    min-height: calc(100vh - 80px);
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding: 0;
+    }
+}

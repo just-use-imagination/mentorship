@@ -1,0 +1,46 @@
+:host {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.btn-language {
+    background-color: transparent;
+    border: none;
+    color: #333;
+    padding: 0.5rem;
+    font-size: 0.875rem;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    min-width: 3rem;
+    justify-content: center;
+    height: 100%;
+
+    &:hover,
+    &:focus {
+        background-color: rgba(0, 0, 0, 0.05);
+    }
+
+    &::after {
+        margin-left: 0.5rem;
+    }
+}
+
+.dropdown-menu {
+    min-width: 4rem;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.dropdown-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #f8f9fa;
+    }
+}

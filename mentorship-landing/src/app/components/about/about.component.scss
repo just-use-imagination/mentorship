@@ -1,0 +1,265 @@
+.about {
+    padding: 6rem 0;
+    background-color: var(--light-color);
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQ0MCIgaGVpZ2h0PSI3NTAiIHZpZXdCb3g9IjAgMCAxNDQwIDc1MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNLTU5LjYgMjI4LjhDMTY4LjUgMzYwLjQgNjM4LjMgMjA0LjEgOTY5LjQgMzQ3LjdjMzMxIDEzNi4yIDYwOC4xLTc3LjIgNzIxLjQgOC45djM5NC4ySC01OS42VjIyOC44eiIgZmlsbD0iI2YxZjVmOCIvPjwvc3ZnPg==');
+        background-size: cover;
+        background-position: center;
+        opacity: 0.5;
+        z-index: 0;
+    }
+
+    .container {
+        position: relative;
+        z-index: 1;
+    }
+
+    .section-title {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        color: #2d3748;
+    }
+
+    .section-subtitle {
+        font-size: 1.1rem;
+        color: #4a5568;
+        margin-bottom: 0;
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .about-image {
+        text-align: center;
+        position: relative;
+        margin-bottom: 2rem;
+
+        img {
+            width: 100%;
+            border: 8px solid white;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            transition: all 0.5s ease;
+
+            &:hover {
+                transform: scale(1.02);
+                box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+            }
+        }
+
+        .experience-badge {
+            position: absolute;
+            bottom: 15%;
+            right: 5%;
+            background: linear-gradient(45deg, var(--primary-color), var(--primary-light));
+            color: white;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 10px 20px rgba(45, 76, 201, 0.3);
+            animation: float 3s ease-in-out infinite;
+
+            @keyframes float {
+                0% {
+                    transform: translateY(0px);
+                }
+
+                50% {
+                    transform: translateY(-10px);
+                }
+
+                100% {
+                    transform: translateY(0px);
+                }
+            }
+
+            .years {
+                font-size: 1.8rem;
+                font-weight: 700;
+                line-height: 1;
+            }
+
+            .text {
+                font-size: 0.75rem;
+                opacity: 0.9;
+            }
+        }
+    }
+
+    // Styles for combined experience and education cards
+    .experience-education {
+        .stat-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            overflow: hidden;
+            border-radius: 10px;
+
+            &:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1) !important;
+            }
+
+            .card-body {
+                padding: 1.25rem;
+            }
+
+            h3 {
+                font-size: 1.5rem;
+                font-weight: 700;
+                color: var(--primary-color);
+            }
+
+            i {
+                font-size: 1.5rem;
+                color: var(--primary-color);
+            }
+        }
+    }
+
+    .about-content {
+        h3 {
+            font-weight: 700;
+            color: var(--primary-color);
+            position: relative;
+            display: inline-block;
+            margin-bottom: 1.5rem;
+
+            &:after {
+                content: '';
+                display: block;
+                width: 50px;
+                height: 3px;
+                background: var(--primary-color);
+                margin-top: 10px;
+            }
+        }
+
+        p {
+            color: #555;
+            line-height: 1.7;
+            margin-bottom: 2rem;
+        }
+
+        h4 {
+            color: var(--primary-color);
+            font-weight: 600;
+            position: relative;
+            display: inline-block;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+
+            &:after {
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: 2px;
+                background: linear-gradient(to right, var(--primary-color), transparent);
+            }
+
+            i {
+                color: var(--primary-color);
+            }
+        }
+    }
+
+    .skills {
+        .skill-item {
+            .skill-info {
+                p {
+                    margin-bottom: 0;
+
+                    &:first-child {
+                        color: var(--dark-color);
+                    }
+
+                    &:last-child {
+                        color: var(--primary-color);
+                    }
+                }
+            }
+
+            .progress {
+                border-radius: 50px;
+                overflow: hidden;
+                background-color: rgba(var(--primary-rgb), 0.1);
+
+                .progress-bar {
+                    background: linear-gradient(to right, var(--primary-color), var(--primary-light));
+                    transition: width 1.5s ease-in-out;
+                    position: relative;
+
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                        height: 100%;
+                        width: 5px;
+                        background: rgba(255, 255, 255, 0.5);
+                        border-radius: 2px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 991.98px) {
+        .about-image {
+            margin-bottom: 3rem;
+
+            .experience-badge {
+                width: 80px;
+                height: 80px;
+                right: 20%;
+
+                .years {
+                    font-size: 1.5rem;
+                }
+
+                .text {
+                    font-size: 0.7rem;
+                }
+            }
+        }
+
+        .about-content {
+            padding-left: 0 !important;
+            margin-top: 2rem;
+        }
+    }
+
+    @media (max-width: 767.98px) {
+        .experience-education .row {
+            margin-bottom: 1rem;
+        }
+    }
+
+    @media (max-width: 575.98px) {
+        .about-image .experience-badge {
+            width: 70px;
+            height: 70px;
+            right: 25%;
+
+            .years {
+                font-size: 1.3rem;
+            }
+        }
+
+        .experience-education .stat-card h3 {
+            font-size: 1.3rem;
+        }
+    }
+}

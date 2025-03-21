@@ -1,0 +1,55 @@
+<section id="hero" class="hero">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 hero-content">
+                <span class="badge bg-white text-primary mb-3 px-3 py-2 rounded-pill">
+                    <i class="fas fa-star me-1"></i> {{ 'HERO.BADGE' | translate }}
+                </span>
+                <h1 class="hero-title">{{ 'HERO.TITLE' | translate }}</h1>
+                <p class="hero-subtitle">{{ 'HERO.SUBTITLE' | translate }}</p>
+
+                <div class="hero-stats d-flex mt-4 mb-4 w-100">
+                    <div class="px-3">
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-maple-leaf text-white-50"></i>
+                            <span class="h4 mb-0 ml-0">7+</span>
+                        </div>
+                        <p class="text-white-50 mb-0 small">{{ 'HERO.CANADA_EXPERIENCE' | translate }}</p>
+                    </div>
+                    <div class="px-3">
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-check-circle me-2 text-white-50"></i>
+                            <span class="h4 mb-0">30+</span>
+                        </div>
+                        <p class="text-white-50 mb-0 small">{{ 'ABOUT.EXPERIENCE.PROJECTS' | translate }}</p>
+                    </div>
+                    <div class="px-3">
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-graduation-cap me-2 text-white-50"></i>
+                            <span class="h4 mb-0">2</span>
+                        </div>
+                        <p class="text-white-50 mb-0 small">{{ 'HERO.COUNTRIES_EDUCATION' | translate }}</p>
+                    </div>
+                </div>
+
+                <div class="hero-cta d-flex flex-column flex-md-row w-100">
+                    <a href="#contact" class="btn btn-primary btn-lg mb-3 mb-md-0 me-md-3">
+                        {{ 'HERO.CTA_BUTTON' | translate }}
+                        <i class="fas fa-arrow-right ms-2"></i>
+                    </a>
+                    <a href="#why-mentorship" class="btn btn-outline-secondary btn-lg">
+                        {{ 'HEADER.NAV.WHY_MENTORSHIP' | translate }}
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-6 hero-image" [class.loaded]="imageLoaded">
+                <div class="image-container">
+                    <img src="assets/images/student-illustration.png"
+                        alt="Cartoon illustration of person studying at desk with laptop" class="img-fluid"
+                        (load)="onImageLoad()">
+                    <div class="overlay-effect"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

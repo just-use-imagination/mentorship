@@ -1,0 +1,247 @@
+/* You can add global styles to this file, and also import other style files */
+@use 'sass:color';
+@use 'bootstrap/scss/bootstrap' as bootstrap;
+
+// Modern color palette with enhanced accessibility
+:root {
+    --primary-color: #1e3caa; // Changed back to blue for better contrast
+    --primary-light: #2d4cc9; // Changed back to lighter blue
+    --primary-dark: #152c80; // Darker blue for hover states
+    --secondary-color: #2a9e4a; // Darker green for better contrast
+    --secondary-light: #5ed485;
+    --dark-color: #0b132b;
+    --light-color: #f8f9fa;
+    --accent-color: #e04c4c; // Darker red for better contrast
+    --muted-color: #656565; // Darker gray for better contrast
+    --success-color: #2a9e4a; // Same as secondary for consistency
+    --info-color: #0067ce; // Darker blue for better contrast
+    --warning-color: #d6b000; // Darker yellow for better contrast
+    --danger-color: #d93030; // Darker red for better contrast
+    --body-bg: #ffffff;
+    --body-color: #333333;
+    --border-radius-sm: 0.25rem;
+    --border-radius: 0.5rem;
+    --border-radius-lg: 1rem;
+    --border-radius-xl: 1.5rem;
+    --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    --box-shadow-sm: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    --box-shadow-lg: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+    --transition-base: all 0.3s ease;
+}
+
+// Base styles
+body {
+    font-family: 'Inter', 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    color: var(--body-color);
+    background-color: var(--body-bg);
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+section {
+    padding: 3rem 0;
+}
+
+// Typography
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 3.5rem;
+    letter-spacing: -0.05em;
+}
+
+h2 {
+    font-size: 2.5rem;
+    letter-spacing: -0.03em;
+}
+
+h3 {
+    font-size: 2rem;
+    letter-spacing: -0.02em;
+}
+
+p {
+    margin-bottom: 1.5rem;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: var(--transition-base);
+
+    &:hover {
+        color: var(--primary-dark);
+    }
+}
+
+// Buttons with enhanced accessibility
+.btn {
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    border-radius: var(--border-radius);
+    transition: var(--transition-base);
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-light) 100%);
+    border-color: var(--primary-color);
+    box-shadow: 0 4px 6px rgba(45, 76, 201, 0.2); // Changed back to blue shadow
+    color: white; // Ensuring text contrast
+
+    &:hover,
+    &:focus {
+        background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-color) 100%);
+        border-color: var(--primary-dark);
+        transform: translateY(-3px);
+        box-shadow: 0 6px 12px rgba(45, 76, 201, 0.3); // Changed back to blue shadow
+        color: white;
+    }
+}
+
+.btn-secondary {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    color: white; // Ensuring text contrast
+
+    &:hover,
+    &:focus {
+        background-color: #218a3d; // Darker green (10% darker than --secondary-color)
+        border-color: #218a3d; // Same darker green
+        transform: translateY(-3px);
+        color: white;
+    }
+}
+
+.btn-outline-primary {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+
+    &:hover {
+        background-color: var(--primary-color);
+        color: white;
+    }
+}
+
+// Section titles
+.section-title {
+    position: relative;
+    margin-bottom: 3rem;
+    display: inline-block;
+
+    &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        width: 50px;
+        height: 3px;
+        background-color: var(--primary-color);
+    }
+}
+
+.text-center .section-title:after {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+// Cards
+.card {
+    border: none;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    transition: var(--transition-base);
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: var(--box-shadow-lg);
+    }
+}
+
+// Badges with improved contrast
+.badge {
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    border-radius: 50rem;
+}
+
+.bg-primary {
+    background-color: var(--primary-color) !important;
+}
+
+.bg-secondary {
+    background-color: var(--secondary-color) !important;
+}
+
+.bg-success {
+    background-color: var(--success-color) !important;
+}
+
+.bg-info {
+    background-color: var(--info-color) !important;
+}
+
+.bg-warning {
+    background-color: var(--warning-color) !important;
+}
+
+.bg-danger {
+    background-color: var(--danger-color) !important;
+}
+
+.text-primary {
+    color: var(--primary-color) !important;
+}
+
+.text-secondary {
+    color: var(--secondary-color) !important;
+}
+
+.text-success {
+    color: var(--success-color) !important;
+}
+
+.text-info {
+    color: var(--info-color) !important;
+}
+
+.text-warning {
+    color: var(--warning-color) !important;
+}
+
+.text-danger {
+    color: var(--danger-color) !important;
+}
+
+.text-muted {
+    color: var(--muted-color) !important;
+}
+
+// Responsive adjustments
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.75rem;
+    }
+
+    section {
+        padding: 3rem 0;
+    }
+}

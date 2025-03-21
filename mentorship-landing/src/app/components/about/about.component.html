@@ -1,0 +1,46 @@
+<section id="about" class="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-title">{{ 'ABOUT.TITLE' | translate }}</h2>
+                <p class="section-subtitle">{{ 'ABOUT.SUBTITLE' | translate }}</p>
+            </div>
+        </div>
+
+        <div class="row align-items-center mt-5">
+            <div class="col-lg-4">
+                <div class="about-image position-relative">
+                    <img src="assets/images/5397842884352411815.jpg" class="img-fluid shadow">
+                    <div class="experience-badge">
+                        <span class="years">7+</span>
+                        <span class="text">{{ 'ABOUT.EXPERIENCE.YEARS' | translate }}</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-8">
+                <div class="about-content ps-lg-4">
+                    <h3 class="mb-3">{{ 'ABOUT.MENTOR_TITLE' | translate }}</h3>
+
+                    <p class="mb-4">{{ 'ABOUT.DESCRIPTION' | translate }}</p>
+
+                    <h4 class="mb-4"><i class="fas fa-laptop-code me-2"></i>{{ 'ABOUT.SKILLS_TITLE' | translate }}</h4>
+                    <div class="skills">
+                        @for (skill of sortedSkills; track skill.name) {
+                        <div class="skill-item mb-3">
+                            <div class="skill-info d-flex justify-content-between mb-1">
+                                <p class="mb-0 fw-bold">{{ skill.name | translate }}</p>
+                                <p class="mb-0">{{ skill.level }}%</p>
+                            </div>
+                            <div class="progress" style="height: 10px">
+                                <div class="progress-bar" role="progressbar" [style.width.%]="skill.level"
+                                    aria-valuenow="skill.level" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

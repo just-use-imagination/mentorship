@@ -1,0 +1,80 @@
+<section id="why-mentorship" class="why-mentorship">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-title">{{ 'WHY_MENTORSHIP.TITLE' | translate }}</h2>
+                <p class="section-subtitle">{{ 'WHY_MENTORSHIP.SUBTITLE' | translate }}</p>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <div class="comparison-box negative">
+                    <div class="box-header">
+                        <i class="fas fa-times-circle text-danger me-2"></i>
+                        <h3>{{ 'WHY_MENTORSHIP.TRADITIONAL_TITLE' | translate }}</h3>
+                    </div>
+                    <ul class="comparison-list negative">
+                        <li>{{ 'WHY_MENTORSHIP.TRADITIONAL_CONS.CURRICULUM' | translate }}</li>
+                        <li>{{ 'WHY_MENTORSHIP.TRADITIONAL_CONS.FEEDBACK' | translate }}</li>
+                        <li>{{ 'WHY_MENTORSHIP.TRADITIONAL_CONS.KNOWLEDGE' | translate }}</li>
+                        <li>{{ 'WHY_MENTORSHIP.TRADITIONAL_CONS.PACE' | translate }}</li>
+                        <li>{{ 'WHY_MENTORSHIP.TRADITIONAL_CONS.CONTENT' | translate }}</li>
+                        <li>{{ 'WHY_MENTORSHIP.TRADITIONAL_CONS.NETWORKING' | translate }}</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="comparison-box positive">
+                    <div class="box-header">
+                        <i class="fas fa-check-circle text-success me-2"></i>
+                        <h3>{{ 'WHY_MENTORSHIP.PERSONALIZED_TITLE' | translate }}</h3>
+                    </div>
+                    <ul class="comparison-list positive">
+                        <li>{{ 'WHY_MENTORSHIP.PERSONALIZED_PROS.CURRICULUM' | translate }}</li>
+                        <li>{{ 'WHY_MENTORSHIP.PERSONALIZED_PROS.FEEDBACK' | translate }}</li>
+                        <li>{{ 'WHY_MENTORSHIP.PERSONALIZED_PROS.KNOWLEDGE' | translate }}</li>
+                        <li>{{ 'WHY_MENTORSHIP.PERSONALIZED_PROS.PACE' | translate }}</li>
+                        <li>{{ 'WHY_MENTORSHIP.PERSONALIZED_PROS.CONTENT' | translate }}</li>
+                        <li>{{ 'WHY_MENTORSHIP.PERSONALIZED_PROS.NETWORKING' | translate }}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5 pt-5">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-title">{{ 'WHY_MENTORSHIP.BENEFITS_TITLE' | translate }}</h2>
+                <p class="section-subtitle">{{ 'WHY_MENTORSHIP.BENEFITS_SUBTITLE' | translate }}</p>
+            </div>
+        </div>
+
+        <div class="row">
+            @for (benefit of benefits; track benefit.title) {
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-{{ benefit.icon }}"></i>
+                    </div>
+                    <h4>{{ benefit.title | translate }}</h4>
+                    <p>{{ benefit.description | translate }}</p>
+                </div>
+            </div>
+            }
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-lg-12 text-center">
+                <div class="cta-box">
+                    <h4>{{ 'WHY_MENTORSHIP.CTA_TITLE' | translate }}</h4>
+                    <p>{{ 'WHY_MENTORSHIP.CTA_TEXT' | translate }}</p>
+                    <a href="#pricing" class="btn btn-primary btn-lg">
+                        {{ 'PRICING.TITLE' | translate }}
+                        <i class="fas fa-arrow-right ms-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
