@@ -1,0 +1,209 @@
+{
+    "HEADER": {
+        "BRAND": "SkillCamp",
+        "NAV": {
+            "HOME": "Home",
+            "ABOUT": "About Me",
+            "WHY_MENTORSHIP": "Why Mentorship",
+            "PRICING": "Pricing",
+            "CONTACT": "Contact"
+        }
+    },
+    "HERO": {
+        "TITLE": "Start Your IT Career with Professional Mentorship",
+        "SUBTITLE": "Get personalized guidance from an industry expert",
+        "CTA_BUTTON": "Get Started",
+        "BADGE": "Personalized Mentorship",
+        "STUDENTS": "Students Mentored",
+        "SUCCESS_RATE": "Success Rate",
+        "CARD_TITLE": "Personalized Learning",
+        "CARD_TEXT": "Tailored to your goals and pace",
+        "CANADA_EXPERIENCE": "Years of hands-on experience",
+        "COUNTRIES_EDUCATION": "Higher education degrees"
+    },
+    "ABOUT": {
+        "TITLE": "About Me",
+        "SUBTITLE": "Learn from an experienced professional",
+        "DESCRIPTION": "Hello! I'm excited to offer you personalized IT mentorship, drawing on my 7 years of experience in Canada and education from two countries. My goal is to help you achieve your IT career objectives, regardless of your current skill level or age. With over 30 successfully completed projects, a Bachelor's degree in Software Engineering from Ukraine, and a 2-year Graduate Certificate in Mobile Solutions Development from a Canadian college, I'm eager to share my knowledge and expertise to help you develop the skills needed for success in the tech industry. Let's work together to chart your path to professional growth!",
+        "MENTOR_NAME": "SkillCamp",
+        "MENTOR_TITLE": "IT Mentorship Service",
+        "EXPERIENCE": {
+            "YEARS": "Years Canadian Experience",
+            "EDUCATION1": "Education",
+            "EDUCATION2": "Education",
+            "PROJECTS": "Projects completed",
+            "STUDENTS": "All Student Levels"
+        },
+        "SKILLS_TITLE": "My Skills",
+        "SKILLS": {
+            "WEB": "Web Development",
+            "SQL": "SQL and Databases",
+            "AUTOMATION": "Automation and Testing",
+            "MOBILE": "Mobile Development",
+            "GENERAL": "General IT Knowledge"
+        }
+    },
+    "WHY_MENTORSHIP": {
+        "TITLE": "Why Choose IT Mentorship?",
+        "SUBTITLE": "Discover how personalized mentorship can accelerate your IT career",
+        "BADGE": "Compare & Choose",
+        "TRADITIONAL_TITLE": "Traditional Learning",
+        "TRADITIONAL_CONS": {
+            "CURRICULUM": "Generic curriculum not aligned with your goals",
+            "FEEDBACK": "Limited personalized feedback",
+            "KNOWLEDGE": "Theoretical knowledge without practical application",
+            "PACE": "Fixed pace that may be too slow or too fast",
+            "CONTENT": "Outdated content not matching industry needs",
+            "NETWORKING": "Limited industry connections and networking"
+        },
+        "PERSONALIZED_TITLE": "Personalized Mentorship",
+        "PERSONALIZED_PROS": {
+            "CURRICULUM": "Tailored curriculum specific to your career goals",
+            "FEEDBACK": "Continuous personalized feedback and guidance",
+            "KNOWLEDGE": "Practical, real-world knowledge and experience",
+            "PACE": "Flexible pace adjusted to your learning style",
+            "CONTENT": "Up-to-date content matching current industry trends",
+            "NETWORKING": "Access to mentor's network and industry connections"
+        },
+        "BENEFITS_TITLE": "Key Benefits of Mentorship Program",
+        "BENEFITS_SUBTITLE": "Get the most out of your mentorship experience",
+        "CTA_TITLE": "Ready to Accelerate Your IT Career?",
+        "CTA_TEXT": "Get started with one of our mentorship plans and take your skills to the next level.",
+        "BENEFITS": {
+            "PERSONALIZED": {
+                "TITLE": "Personalized Learning",
+                "DESCRIPTION": "Get a tailored learning plan that's adapted to your specific goals and needs."
+            },
+            "REAL_WORLD": {
+                "TITLE": "Real-World Experience",
+                "DESCRIPTION": "Gain practical knowledge through real projects and industry-relevant tasks."
+            },
+            "FEEDBACK": {
+                "TITLE": "Continuous Feedback",
+                "DESCRIPTION": "Receive regular, constructive feedback to help you improve faster."
+            },
+            "INSIGHTS": {
+                "TITLE": "Industry Insights",
+                "DESCRIPTION": "Learn about the latest trends and best practices directly from experienced professionals."
+            },
+            "ACCOUNTABILITY": {
+                "TITLE": "Accountability",
+                "DESCRIPTION": "Stay motivated with regular check-ins and progress tracking."
+            },
+            "NETWORK": {
+                "TITLE": "Industry Networking",
+                "DESCRIPTION": "Connect with professionals in the industry and expand your network."
+            }
+        }
+    },
+    "PRICING": {
+        "TITLE": "Pricing Plans",
+        "SUBTITLE": "Choose a plan that works for you",
+        "MOST_POPULAR": "Most Popular",
+        "CUSTOM_PRICE": "TBD",
+        "GUARANTEE_TITLE": "100% Satisfaction Guarantee",
+        "GUARANTEE_TEXT": "If you're not completely satisfied with your first session, I'll refund your payment in full. No questions asked.",
+        "CRYPTO_NOTICE": "Cryptocurrency payments accepted",
+        "USD_NOTICE": "All prices displayed in USD",
+        "PLANS": {
+            "BASIC": {
+                "TITLE": "Personal",
+                "PRICE": "$300",
+                "PERIOD": "/month",
+                "FEATURES": [
+                    "Individual one-on-one sessions",
+                    "Priority email support",
+                    "Personalized learning plan",
+                    "Code review",
+                    "Project guidance"
+                ],
+                "CTA": "Choose Plan"
+            },
+            "STANDARD": {
+                "TITLE": "Group",
+                "PRICE": "$200",
+                "PERIOD": " per student monthly",
+                "FEATURES": [
+                    "Group sessions (up to 5 people)",
+                    "Collaborative learning",
+                    "Personalized learning plan",
+                    "Code review",
+                    "Project guidance"
+                ],
+                "CTA": "Choose Plan"
+            },
+            "PREMIUM": {
+                "TITLE": "Custom",
+                "PRICE": "TBD",
+                "PERIOD": "",
+                "FEATURES": [
+                    "Tailored to your needs",
+                    "Flexible schedule and format",
+                    "Custom curriculum",
+                    "Extended project support",
+                    "Career mentorship"
+                ],
+                "CTA": "Contact Me"
+            }
+        }
+    },
+    "CONTACT": {
+        "TITLE": "Contact Me",
+        "SUBTITLE": "Let's start your mentorship journey together",
+        "CONTACT_ME": "Send Message",
+        "EMAIL_ME": "Send Me an Email",
+        "EMAIL": "Email",
+        "TELEGRAM": "Telegram",
+        "TAGLINE": "Professional IT Mentorship",
+        "CONTACT_INFO": {
+            "EMAIL_TITLE": "Email",
+            "WEBSITE_TITLE": "Website",
+            "PAYMENT_TITLE": "Payment Options",
+            "PAYMENT_TEXT": "USD and cryptocurrency accepted"
+        },
+        "FORM": {
+            "NAME": "Name",
+            "EMAIL": "Email",
+            "SUBJECT": "Subject",
+            "MESSAGE": "Message",
+            "SUBMIT": "Send Message"
+        },
+        "ERRORS": {
+            "NAME_REQUIRED": "Name is required.",
+            "NAME_LENGTH": "Name must be at least 2 characters.",
+            "EMAIL_REQUIRED": "Email is required.",
+            "EMAIL_INVALID": "Please enter a valid email address.",
+            "SUBJECT_REQUIRED": "Subject is required.",
+            "MESSAGE_REQUIRED": "Message is required.",
+            "MESSAGE_LENGTH": "Message must be at least 10 characters."
+        },
+        "SUCCESS_MESSAGE": "Your message has been sent successfully!",
+        "ERROR_MESSAGE": "There was an error sending your message. Please try again."
+    },
+    "FOOTER": {
+        "COPYRIGHT": "© 2025 SkillCamp. All rights reserved.",
+        "QUICK_LINKS": "Quick Links",
+        "MENTORSHIP_AREAS": "Mentorship Areas",
+        "NAVIGATION": "Navigation",
+        "TAGLINE": "Professional IT Mentorship",
+        "CONTACT_EMAIL": "skillcampcanada&#64;gmail.com",
+        "DOMAIN": "skillcamp.ca",
+        "AREAS": {
+            "WEB": "Web Development",
+            "SQL": "SQL and Databases",
+            "AUTOMATION": "Automation and Testing",
+            "MOBILE": "Mobile Development",
+            "GENERAL": "General IT Knowledge"
+        }
+    },
+    "LANGUAGE_SELECTOR": {
+        "LANGUAGE": "Language",
+        "ENGLISH": "English",
+        "RUSSIAN": "Русский",
+        "UKRAINIAN": "Українська"
+    },
+    "META": {
+        "TITLE": "IT Mentorship - Personalized Learning Experience",
+        "DESCRIPTION": "Professional IT mentorship services to accelerate your career growth. Personalized learning experience with expert guidance."
+    }
+}
