@@ -23,25 +23,10 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Create index.html if not exists
+      - name: Move browser contents to docs root
         run: |
-          if [ ! -f docs/index.html ]; then
-            cat > docs/index.html << 'EOL'
-<!DOCTYPE html>
-<html>
-<head>
-  <meta http-equiv="refresh" content="0;url=browser/index.html">
-  <title>Redirecting...</title>
-</head>
-<body>
-  <p>Redirecting to the application...</p>
-  <script>
-    window.location.href = "browser/index.html";
-  </script>
-</body>
-</html>
-EOL
-          fi
+          cp -r docs/browser/* docs/
+          rm -rf docs/browser
 
       - name: Create CNAME file
         run: echo "skillcamp.ca" > docs/CNAME
