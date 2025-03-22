@@ -25,8 +25,8 @@ jobs:
 
       - name: Move browser contents to docs root
         run: |
-          cp -r docs/browser/* docs/
-          rm -rf docs/browser
+          cp -r docs/* docs/
+          rm -rf docs/
 
       - name: Create CNAME file
         run: echo "skillcamp.ca" > docs/CNAME
