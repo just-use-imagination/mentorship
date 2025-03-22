@@ -26,25 +26,25 @@ jobs:
       - name: Create CNAME file
         run: echo "skillcamp.ca" > docs/CNAME
 
-      - name: Create redirect index.html
+      - name: Create redirect index.html if not exists
         run: |
-          cat > docs/index.html << EOL
-          <!DOCTYPE html>
-          <html>
-          <head>
-            <meta charset="utf-8">
-            <title>IT Mentorship - Personalized Learning Experience</title>
-            <meta name="viewport" content="width=device-width, initial-scale=1">
-            <meta http-equiv="refresh" content="0;URL='browser/index.html'" />
-          </head>
-          <body>
-            <p>Redirecting to the application...</p>
-            <script>
-              window.location.href = 'browser/index.html';
-            </script>
-          </body>
-          </html>
-          EOL
+          if [ ! -f docs/index.html ]; then
+            cat > docs/index.html << 'EOL'
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="refresh" content="0;url=browser/index.html">
+  <title>Redirecting...</title>
+</head>
+<body>
+  <p>Redirecting to the application...</p>
+  <script>
+    window.location.href = "browser/index.html";
+  </script>
+</body>
+</html>
+EOL
+          fi
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
